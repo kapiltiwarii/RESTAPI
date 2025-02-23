@@ -1,10 +1,10 @@
-package com.example.UC4_GreetingController;
+package com.example.UC5_GreetingController;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Uc4GreetingControllerApplicationTests {
+class Uc5GreetingControllerApplicationTests {
 
 	@Test
 	void contextLoads() {

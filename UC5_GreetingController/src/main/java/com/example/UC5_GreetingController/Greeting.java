@@ -1,5 +1,4 @@
-package com.example.UC4_GreetingController;
-
+package com.example.UC5_GreetingController;
 
 import jakarta.persistence.*;
 
