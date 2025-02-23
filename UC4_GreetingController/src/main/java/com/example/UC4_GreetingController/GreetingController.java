@@ -1,7 +1,8 @@
-package com.example.UC3_GreetingController;
+package com.example.UC4_GreetingController;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -24,5 +25,10 @@ public class GreetingController {
         String firstName = request.getOrDefault("firstName", "");
         String lastName = request.getOrDefault("lastName", "");
         return greetingService.postGreeting(firstName, lastName);
+    }
+
+    @GetMapping("/all")
+    public List<Map<String, String>> getAllGreetings() {
+        return greetingService.getAllGreetings();
     }
 }
