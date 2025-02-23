@@ -1,4 +1,4 @@
-package com.example.UC6_GreetingController;
+package com.example.UC7_GreetingController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,4 +29,11 @@ public class GreetingController {
     public List<Greeting> getAllGreetings() {
         return service.getAllGreetings();
     }
+
+    // Edit (Update) Greeting Message
+    @PutMapping("/edit/{id}")
+    public Greeting updateGreeting(@PathVariable Long id, @RequestParam String newMessage) {
+        return service.updateGreeting(id, newMessage);
+    }
 }
+
