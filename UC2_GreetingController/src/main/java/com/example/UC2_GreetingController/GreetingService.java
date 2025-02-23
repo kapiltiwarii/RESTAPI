@@ -1,39 +1,33 @@
-package com.example.UC1_GreetingController;
+package com.example.UC2_GreetingController;
 
-
-import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController
-@RequestMapping("/greeting")
-public class GreetingController {
+@Service
+public class GreetingService {
 
-    @GetMapping
     public Map<String, String> getGreeting() {
         Map<String, String> response = new HashMap<>();
-        response.put("message", "Hello from GET");
+        response.put("message", "Hello World");
         return response;
     }
 
-    @PostMapping
-    public Map<String, String> postGreeting(@RequestBody Map<String, String> request) {
+    public Map<String, String> postGreeting(String name) {
         Map<String, String> response = new HashMap<>();
         response.put("message", "Hello from POST");
-        response.put("received", request.get("name"));
+        response.put("received", name);
         return response;
     }
 
-    @PutMapping
-    public Map<String, String> putGreeting(@RequestBody Map<String, String> request) {
+    public Map<String, String> putGreeting(String name) {
         Map<String, String> response = new HashMap<>();
         response.put("message", "Hello from PUT");
-        response.put("updated", request.get("name"));
+        response.put("updated", name);
         return response;
     }
 
-    @DeleteMapping
     public Map<String, String> deleteGreeting() {
         Map<String, String> response = new HashMap<>();
         response.put("message", "Hello from DELETE");
