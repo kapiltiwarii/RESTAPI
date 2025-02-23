@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>UC2_GreetingController</artifactId>
+	<artifactId>UC3_GreetingController</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>UC2_GreetingController</name>
+	<name>UC3_GreetingController</name>
 	<description>UC1 project for rest api</description>
 	<url/>
 	<licenses>

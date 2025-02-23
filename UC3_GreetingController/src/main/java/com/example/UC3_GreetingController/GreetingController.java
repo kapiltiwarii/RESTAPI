@@ -1,5 +1,4 @@
-package com.example.UC2_GreetingController;
-
+package com.example.UC3_GreetingController;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -22,18 +21,8 @@ public class GreetingController {
 
     @PostMapping
     public Map<String, String> postGreeting(@RequestBody Map<String, String> request) {
-        String name = request.getOrDefault("name", "Guest");
-        return greetingService.postGreeting(name);
-    }
-
-    @PutMapping
-    public Map<String, String> putGreeting(@RequestBody Map<String, String> request) {
-        String name = request.getOrDefault("name", "Unknown");
-        return greetingService.putGreeting(name);
-    }
-
-    @DeleteMapping
-    public Map<String, String> deleteGreeting() {
-        return greetingService.deleteGreeting();
+        String firstName = request.getOrDefault("firstName", "");
+        String lastName = request.getOrDefault("lastName", "");
+        return greetingService.postGreeting(firstName, lastName);
     }
 }
