@@ -1,4 +1,4 @@
-package com.example.UC6_GreetingController;
+package com.example.UC7_GreetingController;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
