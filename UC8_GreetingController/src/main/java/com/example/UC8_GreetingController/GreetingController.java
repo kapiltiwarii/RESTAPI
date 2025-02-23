@@ -1,4 +1,4 @@
-package com.example.UC7_GreetingController;
+package com.example.UC8_GreetingController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -35,5 +35,11 @@ public class GreetingController {
     public Greeting updateGreeting(@PathVariable Long id, @RequestParam String newMessage) {
         return service.updateGreeting(id, newMessage);
     }
-}
 
+    // Delete Greeting Message
+    @DeleteMapping("/delete/{id}")
+    public String deleteGreeting(@PathVariable Long id) {
+        service.deleteGreeting(id);
+        return "Greeting with ID " + id + " deleted successfully.";
+    }
+}

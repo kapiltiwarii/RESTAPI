@@ -1,13 +1,13 @@
-package com.example.UC7_GreetingController;
+package com.example.UC8_GreetingController;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Uc7GreetingControllerApplication {
+public class Uc8GreetingControllerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Uc7GreetingControllerApplication.class, args);
+		SpringApplication.run(Uc8GreetingControllerApplication.class, args);
 	}
 
 }
