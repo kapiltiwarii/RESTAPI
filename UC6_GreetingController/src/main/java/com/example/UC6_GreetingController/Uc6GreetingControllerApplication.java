@@ -1,13 +1,13 @@
-package com.example.UC5_GreetingController;
+package com.example.UC6_GreetingController;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Uc5GreetingControllerApplication {
+public class Uc6GreetingControllerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Uc5GreetingControllerApplication.class, args);
+		SpringApplication.run(Uc6GreetingControllerApplication.class, args);
 	}
 
 }
