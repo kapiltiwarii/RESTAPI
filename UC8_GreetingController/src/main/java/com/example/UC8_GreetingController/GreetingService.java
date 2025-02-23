@@ -1,4 +1,5 @@
-package com.example.UC7_GreetingController;
+package com.example.UC8_GreetingController;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -38,5 +39,13 @@ public class GreetingService {
 
         greeting.setMessage(newMessage);
         return repository.save(greeting);
+    }
+
+    // Delete Greeting Message
+    public void deleteGreeting(Long id) {
+        if (!repository.existsById(id)) {
+            throw new RuntimeException("Greeting not found for ID: " + id);
+        }
+        repository.deleteById(id);
     }
 }
